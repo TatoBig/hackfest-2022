@@ -1,0 +1,12 @@
+@import '/styles/settings/_settings';
+
+.button {
+  margin: 0;
+  background: $primary;
+  color: white;
+  padding: 0.25rem 0rem;
+
+  &:hover {
+    background: #222;
+  }
+}
