@@ -5,6 +5,9 @@ const nextConfig = {
   reactStrictMode: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')]
+  },
+  typescript: {
+    ignoreBuildErrors: true
   }
 }
 
