@@ -1,10 +1,16 @@
 import styles from './Button.module.scss'
 
-const Button = () => {
+type Props = {
+  color: string
+}
+
+const Button = ({ color }: Props) => {
   return (
-    <button className={styles.button}>
-      Test
-    </button>
+    <div style={{ backgroundColor: color }} className={styles.button}>
+      <div className={styles.link}>
+
+      </div>
+    </div>
   )
 }
 

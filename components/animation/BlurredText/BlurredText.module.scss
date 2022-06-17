@@ -1,0 +1,45 @@
+.text {
+  font-size: 2rem;
+  animation-name: blur;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  opacity: 1;
+}
+
+.hide {
+  font-size: 2rem;
+  animation-name: hideAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+}
+
+.inactive {
+  font-size: 2rem;
+  opacity: 0;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(20px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.20;
+  }
+  25%, 100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes hideAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    filter: blur(20px);
+    display: none
+  }
+}

@@ -2,11 +2,19 @@
 
 .button {
   margin: 0;
-  background: $primary;
+  background: purple;
   color: white;
   padding: 0.25rem 0rem;
+  width: 100vw;
+  height: 220px;
 
   &:hover {
     background: #222;
   }
 }
+
+.link {
+  
+}
+
+
