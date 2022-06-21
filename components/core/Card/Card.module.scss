@@ -26,8 +26,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-
 }
 
 .flip_card_back {
@@ -36,11 +34,11 @@
     display: grid;
     place-items: center;
     padding: 32px;
-    background-color: #fff;
-    transform: rotateX(180deg);
+    background-color: #E7D7C1;
+    transform: rotateY(180deg);
 
 }
 
 .flip_card:hover .flip_card_inner {
-    transform: rotateX(-180deg);
+    transform: rotateY(-180deg);
 }
