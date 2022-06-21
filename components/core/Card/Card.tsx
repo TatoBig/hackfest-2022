@@ -14,7 +14,7 @@ const Card = ({ title }: Props) => {
       <div className={styles.flip_card}>
         <div className={styles.flip_card_inner}>
           <div className={styles.flip_card_front}
-            style={{ backgroundImage: `url("http://www.odsarte.pr.gov.br/sites/ods-arte/arquivos_restritos/files/imagem/2020-09/img_12.jpg")` }}
+            style={{ backgroundImage: 'url("http://www.odsarte.pr.gov.br/sites/ods-arte/arquivos_restritos/files/imagem/2020-09/img_12.jpg")' }}
           >
           </div>
           <div className={styles.flip_card_back}>
@@ -23,7 +23,7 @@ const Card = ({ title }: Props) => {
         </div>
       </div>
       <div className={prueba.card}>
-        <div className={prueba.imgbox} style={{ backgroundImage: `url("https://c.tenor.com/YQiF2mfEsYwAAAAC/infinite-infinitely.gif")` }}>
+        <div className={prueba.imgbox} style={{ backgroundImage: 'url("https://c.tenor.com/YQiF2mfEsYwAAAAC/infinite-infinitely.gif")' }}>
         </div>
         <div className={prueba.details}>
           <div className='title'>
