@@ -1,5 +1,20 @@
+@import '/styles/settings/_settings';
+
+@mixin textBase {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  @include md {
+    font-size: 1.80rem;
+  }
+  @include xl {
+    font-size: 2rem;
+  }
+}
+
 .text {
-  font-size: 2rem;
+  @include textBase;
   animation-name: blur;
   animation-duration: 8s;
   animation-timing-function: ease-in-out;
@@ -7,7 +22,7 @@
 }
 
 .hide {
-  font-size: 2rem;
+  @include textBase;
   animation-name: hideAnimation;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
@@ -15,9 +30,11 @@
 }
 
 .inactive {
-  font-size: 2rem;
+  @include textBase;
   opacity: 0;
 }
+
+
 
 @keyframes blur {
   0% {
