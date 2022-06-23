@@ -1,0 +1,25 @@
+
+.goals {
+    margin: 0;
+    background: rgb(105, 71, 6);
+    color: white;
+    padding: 0.25rem 0rem;
+    width: 100vw;
+    height: 220px;
+  
+    &:hover {
+      background: #222;
+    }
+  }
+  
+  .gallery {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    gap: 2rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  }
+  .featured {
+    grid-column: span 2;
+  }
