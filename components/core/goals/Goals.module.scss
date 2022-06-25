@@ -19,7 +19,7 @@
 .card {
   overflow: hidden;
   padding: 1rem;
-  background: #fff;
+  background: rgb(115, 87, 81);
   border-radius: 0.3rem;
   box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
   color: #333;
@@ -49,5 +49,10 @@
 
   a {
     text-decoration: none;
+  }
+
+  h1{
+    text-align:center;
+    color: white;
   }
 }
