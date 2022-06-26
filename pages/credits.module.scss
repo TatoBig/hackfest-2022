@@ -1,0 +1,23 @@
+@import '/styles/settings/_settings';
+
+.card {
+  background-color: #ffa;
+
+  @include xl {
+    width: 40%;
+    height: 80%;
+  }
+
+  padding: 1rem;
+  height: 50%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+}
