@@ -1,22 +1,28 @@
 import React from 'react'
 import styles from './ObjectiveContent.module.scss'
+import { useInView } from 'react-intersection-observer'
 
 type Props = {
   text: string
   image: string
-} 
-const ObjectiveContent = ({text, image}:Props) => {
+  right?: boolean
+}
+const ObjectiveContent = ({ text, image, right = false }: Props) => {
+  const { ref, inView } = useInView({
+    threshold: 0.5
+  })
+
   return (
-    <div className={styles.moreStuffGrid}>
-    <img
-      src={image}
-      alt=""
-      className={styles.slideIn + styles.fromLeft}
-    />
-    <p className={styles.slideIn + styles.fromRight}>
-      {text}
-    </p>
-  </div>
+    <div ref={ref} className={inView ? styles.show : styles.hidden} style={{ flexDirection: right ? 'row-reverse' : 'row' }}>
+      <img
+        src={image}
+        alt=""
+        className={styles.image}
+      />
+      <p className={styles.text}>
+        {text}
+      </p>
+    </div>
   )
 }
 
