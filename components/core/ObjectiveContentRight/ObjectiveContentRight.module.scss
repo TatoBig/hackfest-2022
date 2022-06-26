@@ -1,0 +1,82 @@
+.classHeader {
+  --text: #f4f4f4;
+  --text-inverse: #333;
+  --background: transparent;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 3em;
+  transition: background 250ms ease-in;
+  background: var(--background);
+  color: var(--text);
+}
+
+
+.nav-scrolled {
+  --text: #333;
+  --text-inverse: #f4f4f4;
+  --background: #f4f4f4;
+
+  box-shadow: 0 3px 20px rgba(black, 0.2);
+}
+
+.homeAbout {
+  padding: 4em 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.columns {
+  display: flex;
+}
+
+.col+.col {
+  margin-left: 1.5em;
+}
+
+.fadeIn {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fadeIn.appear {
+  opacity: 1;
+}
+
+.moreStuffGrid {
+  background: #f4f4f4;
+  padding: 4em 0;
+  display: grid;
+  grid-gap: 2em;
+  align-items: center;
+  grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em,
+      1fr);
+}
+
+.fromLeft {
+  grid-column: 2 / 3;
+  transform: translateX(-50%);
+}
+
+.fromRight {
+  grid-column: 3 / 4;
+  transform: translateX(50%);
+}
+
+.fromLeft,
+.fromRight {
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+
+.fromLeft.appear,
+.fromRight.appear {
+  transform: translateX(0);
+  opacity: 1;
+}  
