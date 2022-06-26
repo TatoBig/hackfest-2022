@@ -3,6 +3,7 @@ import Intro from 'components/animation/Intro'
 import HomeAbout from 'components/core/HomeAbout'
 import ObjectiveContent from 'components/core/ObjectiveContent'
 import ObjectiveContentRight from 'components/core/ObjectiveContentRight'
+import FooterClass from 'scomponents/core/FooterClass'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from './index.module.scss'
@@ -54,7 +55,7 @@ const Home: NextPage = () => {
         los sistemas tributarios y la eliminación gradual de los subsidios perjudiciales, cuando existan, para reflejar su 
         impacto ambiental, teniendo plenamente en cuenta las necesidades y condiciones específicas de los países en desarrollo
          y minimizando los posibles efectos adversos en su desarrollo, de manera que se proteja a los pobres y a las comunidades afectadas." image="https://unsplash.it/400" />
-      
+      <FooterClass />
     </div>
   )
 }
