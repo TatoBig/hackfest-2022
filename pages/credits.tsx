@@ -1,9 +1,9 @@
-import Credits from 'components/core/Credits'
+import CreditText from 'components/core/CreditText'
 
 const credits = () => {
   return (
         <div>
-            <Credits></Credits>
+            <CreditText></CreditText>
         </div>
   )
 }

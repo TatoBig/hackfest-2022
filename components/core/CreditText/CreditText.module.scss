@@ -1,0 +1,36 @@
+.container{
+    position: relative;
+}
+
+.inicio{
+    position: absolute;
+    background: red;
+    width: 0px;
+}
+
+.final{
+    position: absolute;
+    background: red;
+    transition: all 5s;
+    width: 100px;
+}
+
+.inicio_texto{
+    position: absolute;
+    background: blue;
+    overflow: auto;
+    white-space: nowrap;
+    width: 0px;
+    transition-delay: 1000ms;
+    transition: all 5s;
+}
+
+.final_texto{
+    position: absolute;
+    background: blue;
+    overflow: auto;
+    white-space: nowrap;
+    width: auto;
+    transition-delay: 1000ms;
+    transition: all 5s;
+}
