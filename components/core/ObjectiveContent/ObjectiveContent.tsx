@@ -9,7 +9,8 @@ type Props = {
 }
 const ObjectiveContent = ({ text, image, right = false }: Props) => {
   const { ref, inView } = useInView({
-    threshold: 0.5
+    threshold: 0.5,
+    triggerOnce: true
   })
 
   return (
