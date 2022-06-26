@@ -3,7 +3,6 @@
 @mixin textBase {
   font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 1rem;
   font-weight: 500;
   @include md {
     font-size: 1.80rem;
@@ -13,47 +12,37 @@
   }
 }
 
-.text {
-  @include textBase;
-  animation-name: blur;
-  animation-duration: 8s;
-  animation-timing-function: ease-in-out;
-  opacity: 1;
+.container {
+  overflow: hidden;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
 
-.hide {
-  @include textBase;
-  animation-name: hideAnimation;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  opacity: 0;
+.initial {
+  @include textBase();
+  transform: translateY(200%);
+  transition: transform 0.5s;
 }
 
-.inactive {
-  @include textBase;
-  opacity: 0;
+.show {
+  @include textBase();
+  transform: translateY(0%);
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
 }
 
-
-
-@keyframes blur {
-  0% {
-    transform: translateY(80px);
-  }
-  10% {
-    transform: translateY(40px);
-  }
-  25%, 100% {
-    transform: translateY(0px);
-  }
+.showLine {
+  width: 100%;
+  background-color: black;
+  border-radius: 9999px;
+  height: 2px;
+  transition: width 0.3s;
 }
 
-@keyframes hideAnimation {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(80px);
-    display: none
-  }
+.hideLine {
+  width: 0%;
+  background-color: black;
+  border-radius: 9999px;
+  height: 2px;
+  transition: width 0.3s;
 }

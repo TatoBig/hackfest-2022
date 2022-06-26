@@ -1,5 +1,5 @@
-import useVisibility from 'hooks/useVisibility'
-import { useEffect, useRef, useState } from 'react'
+import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
 import styles from './AnimationText.module.scss'
 
 type AnimationTextProps = {
@@ -7,39 +7,45 @@ type AnimationTextProps = {
   delay?: number
   show?: boolean
   showOnView?: boolean
+  link?: string
+  action?: () => void
 }
 
 const AnimationText = ({
-  text,
+  text = 'Prueba',
   delay = 0,
-  show = true,
-  showOnView = false
+  show = false,
+  link,
+  action
 }: AnimationTextProps) => {
   const [initial, setInitial] = useState(false)
-  const [hide, setHide] = useState(false)
-  const ref = useRef()
-  const inViewport = useVisibility(ref, '0px')
+  const [line, setLine] = useState(styles.hideLine)
+  const router = useRouter()
 
   useEffect(() => {
     triggerAnimation()
   }, [])
 
   useEffect(() => {
-    if (showOnView && inViewport) {
-      console.log(showOnView)
-      setInitial(true)
-    }
-  }, [inViewport])
-
-  useEffect(() => {
-    if (!show) {
-      setHide(true)
+    if (show) {
+      triggerAnimation()
+    } else {
+      setInitial(false)
     }
   }, [show])
 
+  const handleOnClick = () => {
+    if (link) {
+      router.push(link)
+    }
+    if (action) {
+      action()
+    }
+  }
+
   const triggerAnimation = () => {
     setTimeout(() => {
-      if (!showOnView) {
+      if (show) {
         setInitial(true)
       }
     }, delay * 1000)
@@ -47,10 +53,15 @@ const AnimationText = ({
 
   return (
     <div
-      className={initial ? (hide ? styles.hide : styles.text) : styles.inactive}
-      ref={ref}
+      className={styles.container}
+      onClick={() => handleOnClick()}
+      onMouseEnter={() => setLine(styles.showLine)}
+      onMouseLeave={() => setLine(styles.hideLine)}
     >
-      {text}
+      <div className={initial ? styles.show : styles.initial}>
+        {text}
+      </div>
+      <div className={line}/>
     </div>
   )
 }
