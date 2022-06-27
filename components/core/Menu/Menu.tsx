@@ -17,7 +17,7 @@ const Menu = ({ open, setOpen }: Props) => {
             Menu
           </div>
           <AnimationText text="Inicio" show={open} link="/" action={() => setOpen(!open)} />
-          <AnimationText text="Objetivos" show={open} delay={0.2} link="/objectives" action={() => setOpen(!open)} />
+          <AnimationText text="Objetivos" show={open} delay={0.2} link="/goals" action={() => setOpen(!open)} />
           <AnimationText text="Créditos" show={open} delay={0.4} link="/credits" action={() => setOpen(!open)} />
         </div>
       </div>

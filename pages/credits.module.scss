@@ -2,12 +2,12 @@
 
 @mixin figure($width, $color) {
   @include md {
-    width: $width;
-    height: $width;
+    width: $width * 0.85;
+    height: $width * 0.85;
   }
 
-  width: calc($width * 1.8);
-  height: calc($width * 1.8);
+  width: calc($width * 3);
+  height: calc($width * 3);
   background-color: $color;
   border-radius: 100%;
   position: absolute;
@@ -61,21 +61,21 @@
 
 .blurred_2 {
   @include blur;
-  @include figure(30vw, $yellow);
-  animation: myOrbit2 15s infinite;
+  @include figure(50vw, $yellow);
+  animation: myOrbit2 10s infinite;
   bottom: 0;
 
   @include xl {
-    bottom: 0;
-    left: 50%;
+    top: 30%;
+    left: 20%;
   }
 }
 
 .blurred_3 {
   @include blur;
-  @include figure(40vw, $secondary);
+  @include figure(30vw, $secondary);
   animation: myOrbit3 15s infinite;
-  bottom: 50%;
+  bottom: 30%;
 
   @include xl {
     bottom: 20%;
@@ -88,11 +88,11 @@
 
   0%,
   100% {
-    transform: rotate(-25deg) translateX(20rem) rotate(-135deg);
+    transform: rotate(-25deg) translateX(20rem) rotate(-25deg);
   }
 
   50% {
-    transform: rotate(-180deg) translateX(30rem) rotate(-180deg);
+    transform: rotate(-120deg) translateX(30rem) rotate(-120deg);
   }
 }
 
@@ -100,7 +100,7 @@
 
   0%,
   100% {
-    transform: rotate(120deg) translateX(20rem) rotate(120deg);
+    transform: rotate(180deg) translateX(0rem) rotate(180deg);
   }
 
   50% {

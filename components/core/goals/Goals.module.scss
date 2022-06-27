@@ -15,8 +15,11 @@
   height: 100px;
 
 }
+
 .card {
   /*ESTA ES LA CARTA QUE SE USA*/
+  font-size: 0.90rem;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -28,18 +31,19 @@
   box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
   color: #333;
 
-  
+
   a {
     text-decoration: none;
   }
 
-  h1{
-    text-align:center;
+  h1 {
+    text-align: center;
     color: white;
   }
-  h3{
-    text-align:center;
-    font-weight: 200;
+
+  h3 {
+    text-align: center;
+    font-weight: 500;
     color: rgb(0, 0, 0);
   }
 }
