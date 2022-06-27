@@ -1,21 +1,36 @@
 import ArrowDown from 'components/animation/ArrowDown'
 import BlurredText from 'components/animation/BlurredText'
 import Goals from 'components/core/goals'
+import Head from 'next/head'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 import styles from './goals.module.scss'
 
 const goals = () => {
+  const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    setOpen(true)
+  }, [])
+
   return (
     <>
-      <div className={styles.image}>
-        <Image
-          src="/goals.jpg"
-          layout="fill"
-        />
-      </div>
+      <Head>
+        <title>Desarrollo Sostenible | Objetivos</title>
+        <meta name="description" content="Página específica de los objetivos de la producción y consumo sostenible " />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={styles.background}>
-        <BlurredText text="Objetivos de la producción y consumo sostenible" />
-        <ArrowDown delay={-2} />
+        <div className={styles.textContainer}>
+          <Image
+            src="/goals.jpg"
+            layout="fill"
+            objectFit="cover"
+            style={{ filter: 'blur(16px)', zIndex: -100 }}
+          />
+          <BlurredText text="Objetivos de la producción y consumo sostenible" />
+          <ArrowDown delay={-2} />
+        </div>
       </div>
       <div className={styles.container}>
         <div className={styles.gallery}>
