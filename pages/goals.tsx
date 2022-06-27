@@ -3,16 +3,9 @@ import BlurredText from 'components/animation/BlurredText'
 import Goals from 'components/core/goals'
 import Head from 'next/head'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
 import styles from './goals.module.scss'
 
 const goals = () => {
-  const [open, setOpen] = useState(false)
-
-  useEffect(() => {
-    setOpen(true)
-  }, [])
-
   return (
     <>
       <Head>
