@@ -13,7 +13,7 @@ const Intro = () => {
           text="12. Producción y Consumo Responsable"
         />
         <BlurredText
-          text="EL consumo y la produccion mundiales dependen del uso del medio ambiente y de los recursos de una manera"
+          text="El consumo y la producción mundiales dependen del uso del medio ambiente y de los recursos de una manera"
           delay={1}
         />
         <BlurredText

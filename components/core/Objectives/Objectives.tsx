@@ -18,10 +18,7 @@ const Objectives = () => {
             las pérdidas posteriores a la cosecha." image="https://cdn.pixabay.com/photo/2022/01/29/01/43/colombia-6976188_960_720.jpg"
       />
       <ObjectiveContent right text="  De aquí a 2020, lograr la gestión ecológicamente racional de los productos químicos
-            y de todos los desechos a lo largo de su ciclo de vida, de conformidad con los marcos
-             internacionales convenidos, y reducir significativamente su liberación a la atmósfera,
-             el agua y el suelo a fin de minimizar sus efectos adversos en la salud humana y el medio
-             ambiente." image="https://cdn.pixabay.com/photo/2013/03/13/20/44/netherlands-93274_960_720.jpg"
+            y de todos los desechos a lo largo de su ciclo de vida." image="https://cdn.pixabay.com/photo/2013/03/13/20/44/netherlands-93274_960_720.jpg"
       />
       <ObjectiveContent text="   De aquí a 2030, reducir considerablemente la generación de desechos
             mediante actividades de prevención, reducción, reciclado y reutilización.
@@ -46,10 +43,7 @@ const Objectives = () => {
         de lograr un turismo sostenible que cree puestos de trabajo y promueva la cultura y los productos locales." image="https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg"
       />
       <ObjectiveContent text=" Racionalizar los subsidios ineficientes a los combustibles fósiles que fomentan el consumo antieconómico eliminando
-        las distorsiones del mercado, de acuerdo con las circunstancias nacionales, incluso mediante la reestructuración de
-        los sistemas tributarios y la eliminación gradual de los subsidios perjudiciales, cuando existan, para reflejar su
-        impacto ambiental, teniendo plenamente en cuenta las necesidades y condiciones específicas de los países en desarrollo
-         y minimizando los posibles efectos adversos en su desarrollo, de manera que se proteja a los pobres y a las comunidades afectadas." image="https://cdn.pixabay.com/photo/2016/12/17/20/06/gas-pump-1914310_960_720.jpg"
+        las distorsiones del mercado." image="https://cdn.pixabay.com/photo/2016/12/17/20/06/gas-pump-1914310_960_720.jpg"
       />
     </>
   )

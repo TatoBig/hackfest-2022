@@ -23,8 +23,8 @@
   @include background;
 
   @include xl {
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
   }
 
   opacity: 1;
@@ -49,14 +49,22 @@
 
 .closedMenu {
   @include menu;
-  filter: blur(64px);
+
+  @include xl {
+    filter: blur(64px);
+  }
+
   opacity: 0;
   pointer-events: none;
 }
 
 .openMenu {
   @include menu;
-  filter: blur(0px);
+
+  @include xl {
+    filter: blur(0px);
+  }
+
   opacity: 1;
 }
 
