@@ -1,5 +1,4 @@
 import HackfestLogo from 'components/animation/HackfestLogo'
-import Credits from 'components/core/Credits'
 import CreditText from 'components/core/CreditText'
 import styles from './credits.module.scss'
 
@@ -8,7 +7,11 @@ const credits = () => {
     <div className={styles.container}>
       <div className={styles.card}>
         <HackfestLogo />
-        <CreditText></CreditText>
+        <div className={styles.textContainer}>
+          <div className={styles.text}>
+            <CreditText />
+          </div>
+        </div>
       </div>
     </div>
   )
