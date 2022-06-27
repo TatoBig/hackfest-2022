@@ -1,36 +1,35 @@
-.container{
-    position: relative;
+@import '/styles/settings/_settings';
+
+@mixin textBase {
+    font-size: 4rem;
 }
 
-.inicio{
-    position: absolute;
-    background: red;
+.inicio {
+    background: white;
     width: 0px;
+    height: auto;
 }
 
-.final{
-    position: absolute;
-    background: red;
-    transition: all 5s;
-    width: 100px;
+.final {
+    background: white;
+    transition: all 1s;
+    width: 100%;
+    height: auto;
 }
 
-.inicio_texto{
-    position: absolute;
-    background: blue;
-    overflow: auto;
+.inicio_texto {
+    @include textBase;
+    overflow: hidden;
     white-space: nowrap;
     width: 0px;
-    transition-delay: 1000ms;
-    transition: all 5s;
+    
 }
 
-.final_texto{
-    position: absolute;
-    background: blue;
-    overflow: auto;
+.final_texto {
+    @include textBase;
+    background-color: red;
+    overflow: hidden;
     white-space: nowrap;
-    width: auto;
-    transition-delay: 1000ms;
-    transition: all 5s;
+    width: 100%;
+    transition: all 1s;
 }
