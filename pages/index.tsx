@@ -1,8 +1,6 @@
 import Intro from 'components/animation/Intro'
 import HomeAbout from 'components/core/HomeAbout'
 
-import ObjectiveContent from 'components/core/ObjectiveContent'
-import FooterClass from 'components/core/FooterClass'
 
 import Objectives from 'components/core/Objectives'
 
