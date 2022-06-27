@@ -92,22 +92,3 @@
   }
 }
 
-.path {
-  stroke-dasharray: 500;
-  stroke-dashoffset: -500;
-  animation: dash 2.5s ease-in-out forwards;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-
-.scrollIcon {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  bottom: 8%;
-}
