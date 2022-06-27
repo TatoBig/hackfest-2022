@@ -21,3 +21,12 @@
   height: 100vh;
   max-width: 100%;
 }
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  width: 45%;
+}
