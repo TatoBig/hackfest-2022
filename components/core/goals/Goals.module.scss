@@ -11,12 +11,16 @@
 }
 
 .container {
-  max-width: 72rem;
-  padding: 1rem;
-  margin: 0 auto;
-}
 
+  height: 100px;
+
+}
 .card {
+  /*ESTA ES LA CARTA QUE SE USA*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   overflow: hidden;
   padding: 1rem;
   background: rgb(115, 87, 81);
@@ -24,29 +28,7 @@
   box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
   color: #333;
 
-  &__img {
-    display: block;
-    width: calc(100% + 2rem);
-    height: 12rem;
-    border-bottom: 3px solid #9191e9;
-    margin: -1rem -1rem 0;
-    background: #9191e9;
-
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  &__title {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.3;
-  }
-
+  
   a {
     text-decoration: none;
   }
@@ -54,5 +36,10 @@
   h1{
     text-align:center;
     color: white;
+  }
+  h3{
+    text-align:center;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
   }
 }

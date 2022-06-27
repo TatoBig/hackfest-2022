@@ -1,11 +1,17 @@
 
+.container {
+  max-width: 72rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
 .goals {
     margin: 0;
-    background: rgb(105, 71, 6);
-    color: white;
+    background: rgb(6, 105, 19);
+    color: rgb(255, 255, 255);
     padding: 0.25rem 0rem;
-    width: 100vw;
-    height: 220px;
+    width: 230px;
+    height: 200px;
   
     &:hover {
       background: #222;
