@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './ObjectiveContent.module.scss'
 import { useInView } from 'react-intersection-observer'
+import Image from 'next/image'
 
 type Props = {
   text: string
@@ -15,11 +16,15 @@ const ObjectiveContent = ({ text, image, right = false }: Props) => {
 
   return (
     <div ref={ref} className={inView ? styles.show : styles.hidden} style={{ flexDirection: right ? 'row-reverse' : 'row' }}>
-      <img
-        src={image}
-        alt=""
-        className={styles.image}
-      />
+      <div className={styles.image}>
+        <Image
+          src={image}
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          style={{ borderRadius: '5%'}}
+        />
+      </div>
       <p className={styles.text}>
         {text}
       </p>

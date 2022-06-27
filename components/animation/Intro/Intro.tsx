@@ -10,7 +10,7 @@ const Intro = () => {
       <div className={styles.blurred_3} />
       <div className={styles.textContainer}>
         <BlurredText
-          text="12. PRODUCCION Y CONSUMO RESPONSABLE"
+          text="12. Producción y Consumo Responsable"
         />
         <BlurredText
           text="EL consumo y la produccion mundiales dependen del uso del medio ambiente y de los recursos de una manera"
