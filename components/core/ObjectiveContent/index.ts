@@ -1,1 +1,1 @@
-export {default} from './ObjectiveContent'
+export { default } from './ObjectiveContent'

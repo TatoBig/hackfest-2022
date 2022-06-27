@@ -61,7 +61,7 @@ const AnimationText = ({
       <div className={initial ? styles.show : styles.initial}>
         {text}
       </div>
-      <div className={line}/>
+      <div className={line} />
     </div>
   )
 }
