@@ -9,7 +9,7 @@ const GoalsCard = ({ l }: Props) => {
   return (
   <div className={styles.container}>
     <div className={styles.content}>
-      <Link href={l}>Mas información...</Link>
+      <a className={styles.link} href={l} >Mas información...</a>
     </div>
     <div className={styles.flap}></div>
   </div>

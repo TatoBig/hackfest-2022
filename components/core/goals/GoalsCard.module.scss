@@ -21,10 +21,10 @@
   color: black;
   font-family: "Merriweather", serif;
 
-  h3 {
-    font-weight: 200;
-  }
+  
 }
+.link { color: #14002e; } /* CSS link color (red) */
+.link:hover { color: #325288; }
 
 .flap::before {
   position: absolute;
