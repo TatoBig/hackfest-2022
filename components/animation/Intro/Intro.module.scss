@@ -1,0 +1,121 @@
+@import '/styles/settings/_settings';
+
+@mixin figure($width, $color) {
+  @include md {
+    width: $width;
+    height: $width;
+  }
+  width: calc($width * 1.8);
+  height: calc($width * 1.8);
+  background-color: $color;
+  border-radius: 100%;
+  position: absolute;
+  animation-timing-function: ease-in-out;
+}
+
+@mixin blur {
+  filter: blur(40px);
+  opacity: 0.70;
+
+  @include md {
+    filter: blur(64px);
+    opacity: 0.70;
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.blurred_1 {
+  @include blur;
+  @include figure(50vw, $secondary);
+  animation: myOrbit1 15s infinite;
+  bottom: 0;
+  right: 0;
+  left: 40%;
+
+  @include xl {
+    left: 20%;
+  }
+}
+
+.blurred_2 {
+  @include blur;
+  @include figure(30vw, $yellow);
+  animation: myOrbit2 15s infinite;
+  bottom: 0;
+
+  @include xl {
+    bottom: 0;
+    left: 50%;
+  }
+}
+
+.blurred_3 {
+  @include blur;
+  @include figure(40vw, $secondary);
+  animation: myOrbit3 15s infinite;
+  bottom: 50%;
+
+  @include xl {
+    bottom: 20%;
+    left: 20%;
+  }
+
+}
+
+.textContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 50;
+}
+
+@keyframes myOrbit1 {
+
+  0%,
+  100% {
+    transform: rotate(-135deg) translateX(20rem) rotate(-95deg);
+  }
+
+  50% {
+    transform: rotate(-90deg) translateX(30rem) rotate(-90deg);
+  }
+}
+
+@keyframes myOrbit2 {
+
+  0%,
+  100% {
+    transform: rotate(-25deg) translateX(20rem) rotate(-135deg);
+  }
+
+  50% {
+    transform: rotate(-180deg) translateX(30rem) rotate(-180deg);
+  }
+}
+
+@keyframes myOrbit3 {
+
+  0%,
+  100% {
+    transform: rotate(120deg) translateX(20rem) rotate(120deg);
+  }
+
+  50% {
+    transform: rotate(0deg) translateX(30rem) rotate(0deg);
+  }
+}
+

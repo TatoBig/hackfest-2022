@@ -1,0 +1,18 @@
+@import '/styles/settings/_settings';
+
+.default {
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+ 
+}
+
+.webContainer {
+  margin: 0px;
+  @include xl {
+    margin-right: 16px;
+  }
+  @-moz-document url-prefix() {
+    margin: 0;
+  }
+}

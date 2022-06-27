@@ -1,0 +1,45 @@
+@import '/styles/settings/_settings';
+
+.show {
+  @include xl {
+    display: flex;
+    filter: blur(0px);
+  }
+
+  margin-bottom: 4rem;
+  transition: all 1s;
+}
+
+.hidden {
+  @include xl {
+    display: flex;
+    filter: blur(32px);
+  }
+
+  margin-bottom: 4rem;
+  transition: all 1s;
+}
+
+.image {
+  @include xl {
+    height: 40vh;
+  }
+
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  border-radius: 8px;
+  width: 100%;
+  height: 30vh;
+  position: relative;
+}
+
+.text {
+  @include xl {
+    padding: 3rem;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 1rem;
+}

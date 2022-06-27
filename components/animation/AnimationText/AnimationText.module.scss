@@ -1,0 +1,48 @@
+@import '/styles/settings/_settings';
+
+@mixin textBase {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  @include md {
+    font-size: 1.80rem;
+  }
+  @include xl {
+    font-size: 2rem;
+  }
+}
+
+.container {
+  overflow: hidden;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.initial {
+  @include textBase();
+  transform: translateY(200%);
+  transition: transform 0.5s;
+}
+
+.show {
+  @include textBase();
+  transform: translateY(0%);
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.showLine {
+  width: 100%;
+  background-color: black;
+  border-radius: 9999px;
+  height: 2px;
+  transition: width 0.3s;
+}
+
+.hideLine {
+  width: 0%;
+  background-color: black;
+  border-radius: 9999px;
+  height: 2px;
+  transition: width 0.3s;
+}

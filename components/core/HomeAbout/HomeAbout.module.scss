@@ -1,0 +1,21 @@
+@import '/styles/settings/_settings';
+
+.homeAbout {
+  padding: 4em 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.columns {
+  @include xl {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.col {
+  @include xl {
+    padding: 0 1rem;
+  }
+  text-align: justify;
+}

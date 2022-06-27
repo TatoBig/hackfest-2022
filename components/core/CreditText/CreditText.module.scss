@@ -1,0 +1,43 @@
+@import '/styles/settings/_settings';
+
+@mixin textBase {
+    @include xl {
+        font-size: 4rem;
+    }
+    @include md {
+        font-size: 3rem;
+    }
+    font-size: 2rem;
+}
+
+.inicio {
+    background: white;
+    width: 0px;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.final {
+    background: white;
+    transition: all 1s;
+    width: 100%;
+    height: auto;
+    padding: 0 0.2rem;
+    border-radius: 1rem;
+}
+
+.inicio_texto {
+    @include textBase;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0px;
+    
+}
+
+.final_texto {
+    @include textBase;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    transition: all 1s;
+}

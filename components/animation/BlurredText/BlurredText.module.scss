@@ -1,0 +1,60 @@
+@import '/styles/settings/_settings';
+
+@mixin textBase {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  @include md {
+    font-size: 1.80rem;
+  }
+  @include xl {
+    font-size: 2rem;
+  }
+}
+
+.text {
+  @include textBase;
+  animation-name: blur;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  opacity: 1;
+}
+
+.hide {
+  @include textBase;
+  animation-name: hideAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+}
+
+.inactive {
+  @include textBase;
+  opacity: 0;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(20px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.20;
+  }
+  25%, 100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes hideAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    filter: blur(20px);
+    display: none
+  }
+}
