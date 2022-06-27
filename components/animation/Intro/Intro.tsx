@@ -10,15 +10,15 @@ const Intro = () => {
       <div className={styles.blurred_3} />
       <div className={styles.textContainer}>
         <BlurredText
-          text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+          text="12. PRODUCCION Y CONSUMO RESPONSABLE"
         />
         <BlurredText
-          text="Is simply dummy text of the printing and typesetting industry."
+          text="EL consumo y la produccion mundiales dependen del uso del medio ambiente y de los recursos de una manera"
           delay={1}
         />
         <BlurredText
           delay={2}
-          text="Text of the printing and typesetting industry."
+          text="que continua teniendo efectos destructivos sobre el planeta."
         />
         <div className={styles.scrollIcon}>
           <svg
