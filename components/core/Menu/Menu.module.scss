@@ -23,8 +23,8 @@
   @include background;
 
   @include xl {
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
   }
 
   opacity: 1;
