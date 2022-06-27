@@ -1,0 +1,32 @@
+@import '/styles/settings/_settings';
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: transparent;
+  pointer-events: none;
+
+  @include xl {
+    font-size: 8rem;
+  }
+  font-size: 4rem
+}
+
+.text {
+  animation: Text 20s linear infinite;
+}
+
+@keyframes Text {
+  100% {
+    transform: translateX(25.2%);
+  }
+}

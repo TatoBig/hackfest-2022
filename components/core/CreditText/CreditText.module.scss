@@ -1,13 +1,20 @@
 @import '/styles/settings/_settings';
 
 @mixin textBase {
-    font-size: 4rem;
+    @include xl {
+        font-size: 4rem;
+    }
+    @include md {
+        font-size: 3rem;
+    }
+    font-size: 2rem;
 }
 
 .inicio {
     background: white;
     width: 0px;
     height: auto;
+    border-radius: 1rem;
 }
 
 .final {
@@ -15,6 +22,8 @@
     transition: all 1s;
     width: 100%;
     height: auto;
+    padding: 0 0.2rem;
+    border-radius: 1rem;
 }
 
 .inicio_texto {
