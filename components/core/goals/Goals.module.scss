@@ -1,0 +1,45 @@
+@import '/styles/settings/_settings';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
+.a {
+  color: #2d5d7b;
+
+  &:hover,
+  &:focus {
+    color: #457eac;
+  }
+}
+
+.container {
+
+  height: 100px;
+
+}
+.card {
+  /*ESTA ES LA CARTA QUE SE USA*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow: hidden;
+  padding: 1rem;
+  background: rgb(115, 87, 81);
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
+  color: #333;
+
+  
+  a {
+    text-decoration: none;
+  }
+
+  h1{
+    text-align:center;
+    color: white;
+  }
+  h3{
+    text-align:center;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+  }
+}
