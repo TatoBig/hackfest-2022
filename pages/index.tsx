@@ -1,7 +1,6 @@
 import Intro from 'components/animation/Intro'
 import HomeAbout from 'components/core/HomeAbout'
 
-
 import Objectives from 'components/core/Objectives'
 
 import type { NextPage } from 'next'

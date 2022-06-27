@@ -1,1 +1,1 @@
-export {default} from './FooterClass'
+export { default } from './FooterClass'

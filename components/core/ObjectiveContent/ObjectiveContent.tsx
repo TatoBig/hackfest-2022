@@ -22,7 +22,7 @@ const ObjectiveContent = ({ text, image, right = false }: Props) => {
           layout="fill"
           objectFit="cover"
           objectPosition="center"
-          style={{ borderRadius: '5%'}}
+          style={{ borderRadius: '5%' }}
         />
       </div>
       <p className={styles.text}>
