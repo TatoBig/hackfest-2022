@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import 'styles/globals.scss'
 import type { AppProps } from 'next/app'
+import Default from 'layout/Default'
 
 function MyApp ({ Component, pageProps }: AppProps) {
   const [showing, setShowing] = useState(false)
@@ -17,7 +18,9 @@ function MyApp ({ Component, pageProps }: AppProps) {
     return <></>
   } else {
     return (
-      <Component {...pageProps} />
+      <Default>
+        <Component {...pageProps} />
+      </Default>
     )
   }
 }

@@ -1,5 +1,8 @@
-import BlurredText from 'components/animation/BlurredText'
 import Intro from 'components/animation/Intro'
+import HomeAbout from 'components/core/HomeAbout'
+
+import Objectives from 'components/core/Objectives'
+
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from './index.module.scss'
@@ -13,16 +16,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Intro />
-      <div className={styles.page}>
 
+      <div className={styles.pageContainer}>
+        <div className={styles.content}>
+          <HomeAbout />
+          <Objectives />
+        </div>
       </div>
-      <div style={{ height: '100vh' }}>
 
-      </div>
-      <BlurredText
-        text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-        showOnView={true}
-      />
     </div>
   )
 }

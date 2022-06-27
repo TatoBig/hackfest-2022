@@ -11,15 +11,15 @@ const Intro = () => {
       <div className={styles.blurred_3} />
       <div className={styles.textContainer}>
         <BlurredText
-          text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+          text="12. Producción y Consumo Responsable"
         />
         <BlurredText
-          text="Is simply dummy text of the printing and typesetting industry."
+          text="El consumo y la producción mundiales dependen del uso del medio ambiente y de los recursos de una manera"
           delay={1}
         />
         <BlurredText
           delay={2}
-          text="Text of the printing and typesetting industry."
+          text="que continua teniendo efectos destructivos sobre el planeta."
         />
         <ArrowDown />
       </div>
