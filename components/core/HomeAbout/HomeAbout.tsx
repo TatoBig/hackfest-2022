@@ -11,7 +11,7 @@ const HomeAbout = () => {
           <h3>1,300 millones</h3>
           <p>
             cada año se desperdician 1,300 millones de toneladas
-            de aliemtnos, mientras que casi 2,000 millones de personas
+            de alimentos, mientras que casi 2,000 millones de personas
             padecen hambre o desnutrición
           </p>
         </div>
