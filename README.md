@@ -22,8 +22,10 @@
 </details>
 
 ## Grupo
-
+<!--
 <img src="https://github.com/diego0023/prueba1/blob/master/1.png?raw=true" width="250" height="250" alt="Logo" title="Logo">
+ -->
+ ## La decima montaña
 
 | Miembro | Carnet |
 | ----------- | ----------- |
